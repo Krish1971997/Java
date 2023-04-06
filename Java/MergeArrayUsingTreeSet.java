@@ -7,7 +7,7 @@ public class MergeArrayUsingTreeSet {
 		int arr1[]= {2,4,5,6,7,9,10,13};
 		int arr2[]= {2,3,4,5,6,7,8,9,11,15};
 
-		Set<Integer> treeSet=new TreeSet<>();
+		Set<Integer> treeSet=Arrays.asList(arr1,arr2);
 		for (Integer integer : arr1) 
 			treeSet.add(integer);
 		
