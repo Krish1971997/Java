@@ -14,7 +14,7 @@ public class Zprogram_a10b2c5
 	    j++;
 
 	  }
-	else
+	else {
 	  digit = Character.getNumericValue(s.charAt (i));
 	if (i + 1 < s.length ())
 	  {
@@ -29,7 +29,7 @@ public class Zprogram_a10b2c5
 	  {
 	    System.out.print (letter.charAt(j));
 	  }
-
+	}
       }
 
   }
