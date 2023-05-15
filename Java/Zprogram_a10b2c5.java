@@ -1,11 +1,11 @@
 
-class Zprogram_a10b2c5
+public class Zprogram_a10b2c5
 {
   public static void main (String[]args)
   {
-    String s = "a10b3c5";
+    String s = "a10b3c1";
     String letter = "";
-    int j = 0;int digit=0;
+    int j = -1;int digit=0;
     for (int i = 0; i < s.length (); i++)
       {
 	if (Character.isAlphabetic(s.charAt (i)))
