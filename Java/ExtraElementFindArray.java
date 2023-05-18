@@ -1,9 +1,10 @@
+
 public class ExtraElementFindArray
 {
   public static void main (String args[])
   {
-    int arr1 = { 10, 20, 30, 12, 5 };
-    int arr2 = { 10, 5, 30, 20 };
+    int[] arr1 = { 10, 20, 30, 5 };
+    int[] arr2 = { 10, 5, 30,40, 20 };
     int res = extraElement (arr1, arr2);
     System.out.println ("Result-->" + res);
   }
@@ -31,11 +32,12 @@ public class ExtraElementFindArray
       }
     else
       {
-	for (int i = 0; i < arr1.length; i++)
+	for (int i = 0; i < arr2.length; i++)
 	  {
-	    if (arr1[i] != -1)
+	    if (arr2[i] != -1)
 	      return i;
 	  }
       }
+    return 0;
   }
 }
