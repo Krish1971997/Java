@@ -4,7 +4,6 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class Duplicate_Remove {
-	
 	public static void main(String[] args) {
 		String[]s= {"sql","python","java","sql","python","java"};	
 		removeDuplicates(s);
