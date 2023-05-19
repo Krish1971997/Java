@@ -10,7 +10,6 @@ public class RepeatedArray {
                 arr[j] = 0;
             }
         }
-
         int k = res.length - 1;
         for (int i = 0, j = 0; i < arr.length; i++) {
             if (arr[i] != 0) {
