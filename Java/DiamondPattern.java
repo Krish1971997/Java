@@ -1,3 +1,4 @@
+
 public class DiamondPattern {
     public static void main(String[] args) {
         int num = 3;
