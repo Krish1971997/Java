@@ -3,7 +3,7 @@ public class ReversePrimeNumber {
         int num = 23;
         boolean check = primeCheck(num);
         if (check) {
-            int reverse = ReverseNumber(num);
+            int reverse = reverseNumber(num);
             boolean twistedNum = primeCheck(reverse);
             if (twistedNum) {
                 System.out.println(num + " is twisted prime number");
@@ -16,7 +16,7 @@ public class ReversePrimeNumber {
             System.out.println("Not Prime number");
     }
 
-    private static int ReverseNumber(int num) {
+    private static int reverseNumber(int num) {
         int sum = 0;
         while (num > 0) {
             sum = sum * 10 + num % 10;
