@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 //https://www.javatpoint.com/how-to-sort-hashmap-by-value
+//https://www.javatpoint.com/java-basics
 
 public class DecendingOrderBasedOnFrequencyArray implements Comparable<Map.Entry<Integer, Integer>> {
 	public static void main(String args[]) {
