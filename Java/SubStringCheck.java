@@ -1,17 +1,22 @@
-public class SubStringCheck
-{
-  public static void main (String[]args)
-  {
-    String s = "GeeksForGeeks", x = "Fr";
-    int xlength = x.length (), start = 0;
-    for (int i = 0; i < s.length () - x.length (); i++, xlength++)
-      {
-	if (x.equalsignoreCase (s.substring (i, xlength)))
-	  res = i;
-      }
-    if (res == 0)
-      res = -1;
-    System.out.println ("Result  -> " + res);
-  }
-
+public class SubStringCheck {
+    public static void main(String[] args) {
+        // String s = "abcabcabcd", x = "abcd";
+        // String s = "GeeksForGeeks", x = "For";
+        String s = "a", x = "ab";
+        int xlength = x.length(), res = 0;
+        boolean entry = true;
+        if (s.length() >= x.length()) {
+            for (int i = 0; i < s.length(); i++) {
+                if (x.equalsIgnoreCase(s.substring(i, xlength))) {
+                    res = i;
+                    entry = false;
+                    break;
+                } else if (xlength < s.length())
+                    xlength++;
+            }
+        }
+        if (entry)
+            res = -1;
+        System.out.println("Result  -> " + res);
+    }
 }
