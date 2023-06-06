@@ -1,6 +1,5 @@
 //https://practice.geeksforgeeks.org/problems/find-duplicates-in-an-array/1?page=1&company[]=Zoho&sortBy=submissions
 
-
 import java.util.*;
 
 public class FindDuplicatesInAnArray {
@@ -21,7 +20,7 @@ class Solution {
         ArrayList<Integer> list1 = new ArrayList<Integer>();
         for (int i : arr) {
             if (list.contains(i)) {
-                if(!list1.contains(i)){
+                if (!list1.contains(i)) {
                     list1.add(i);
                 }
             } else
@@ -35,4 +34,3 @@ class Solution {
         return list1;
     }
 }
-
